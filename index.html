@@ -7,38 +7,52 @@
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    margin: 0; padding: 20px;
-    color: #f0f4f8;
+    background: #f0f4f8;
+    margin: 0; padding: 0;
+    color: #333;
   }
   .container {
     max-width: 900px;
-    margin: auto;
-    background: #ffffffdd;
-    padding: 40px 50px;
+    margin: 40px auto;
+    background: #fff;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    color: #1e3c72;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    overflow: hidden;
   }
-  h1 {
+  header {
+    background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+    color: white;
+    padding: 40px 50px;
     text-align: center;
-    color: #0b1e3d;
-    font-weight: 700;
-    font-size: 2.8rem;
-    margin-bottom: 0.2em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
   }
-  h2 {
-    color: #1e3c72;
-    border-bottom: 3px solid #2a5298;
-    padding-bottom: 6px;
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  header h2 {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: italic;
+    opacity: 0.85;
+  }
+  main {
+    padding: 40px 50px;
+    color: #222;
+  }
+  h2.section-title {
+    color: #0052d4;
+    border-bottom: 3px solid #6fb1fc;
+    padding-bottom: 8px;
     margin-top: 40px;
     font-weight: 600;
   }
   p {
+    font-size: 1.12rem;
     line-height: 1.7;
-    font-size: 1.1rem;
     margin-top: 1em;
   }
   ul {
@@ -47,49 +61,70 @@
   }
   ul li {
     margin-bottom: 12px;
-    font-size: 1.05rem;
-  }
-  footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
-    font-size: 1rem;
-    color: #0b1e3d;
-    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
   a {
-    color: #1e90ff;
-    text-decoration: none;
+    color: #0052d4;
     font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
   a:hover {
+    color: #4364f7;
     text-decoration: underline;
+  }
+  footer {
+    background: #e9f0fc;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    border-top: 1px solid #d0dbf9;
+  }
+  footer a {
+    color: #0052d4;
+  }
+  @media (max-width: 600px) {
+    .container, header, main, footer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    header h2 {
+      font-size: 1.1rem;
+    }
   }
 </style>
 </head>
 <body>
   <div class="container">
-    <h1>Professional Biography</h1>
-    <h2>Chatri Khatfan</h2>
+    <header>
+      <h1>Professional Biography</h1>
+      <h2>Chatri Khatfan</h2>
+    </header>
+    <main>
+      <p>Chatri Khatfan brings several decades of leadership and technical management experience, with a proven track record of driving growth and innovation across multiple companies in Thailand and Japan. He spent three years managing Thai Audiotex Limited and TAS Mobile Limited, rising to the position of top manager. Following a role as project manager at Locus Telecommunications Inc., Chatri was invited back to Thai Audiotex Limited to serve as <strong>Head of Technical Operations</strong> for both companies, a position he held for nine years.</p>
 
-    <p>Chatri Khatfan brings several decades of leadership and technical management experience, with a proven track record of driving growth and innovation across multiple companies in Thailand and Japan. He spent three years managing Thai Audiotex Limited and TAS Mobile Limited, rising to the position of top manager. Following a role as project manager at Locus Telecommunications Inc., Chatri was invited back to Thai Audiotex Limited to serve as the top technical manager for both companies, a position he held for nine years.</p>
+      <p>Since 2010, Chatri has been a co-founder and technical director of <strong>Utel Corporation (Japan)</strong>, where he has played a key role in driving the company’s technical vision and product development.</p>
 
-    <p>Since 2010, Chatri has been a co-founder and technical director of <strong>Utel Corporation (Japan)</strong>, where he has played a key role in driving the company’s technical vision and product development.</p>
+      <p>He earned his Bachelor of Engineering (Electrical and Computer Engineering) degree at Queensland University of Technology (QUT), followed by postgraduate studies in Computer System Engineering at the University of Queensland (UQ). Both institutions are globally recognized for their excellence in engineering and technology education. Supported by a prestigious scholarship that acknowledged his academic excellence, Chatri’s international education provided him with a global perspective and a strong foundation in advanced technical principles. He is fluent in English, which complements his technical expertise and facilitates effective communication in international environments.</p>
 
-    <p>He earned his Bachelor of Engineering (Electrical and Computer Engineering) degree at Queensland University of Technology (QUT), followed by postgraduate studies in Computer System Engineering at the University of Queensland (UQ). Both institutions are globally recognized for their excellence in engineering and technology education. Supported by a prestigious scholarship that acknowledged his academic excellence, Chatri’s international education provided him with a global perspective and a strong foundation in advanced technical principles. He is fluent in English, which complements his technical expertise and facilitates effective communication in international environments.</p>
+      <p>Chatri possesses a comprehensive skill set in computer engineering, including expertise in embedded systems design, network architecture, software development, system integration, and hardware troubleshooting. He is proficient in programming languages such as C/C++, Python, and Java, and experienced in IoT solutions, cloud computing platforms, and AI-driven technologies.</p>
 
-    <p>Chatri possesses a comprehensive skill set in computer engineering, including expertise in embedded systems design, network architecture, software development, system integration, and hardware troubleshooting. He is proficient in programming languages such as C/C++, Python, and Java, and experienced in IoT solutions, cloud computing platforms, and AI-driven technologies.</p>
+      <h2 class="section-title">Current AI Projects</h2>
+      <ul>
+        <li>Developing advanced machine learning models for predictive analytics to enhance business decision-making processes. <a href="https://en.wikipedia.org/wiki/Predictive_analytics" target="_blank" rel="noopener noreferrer">Learn more</a></li>
+        <li>Implementing computer vision systems for real-time object detection and quality control in manufacturing. <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank" rel="noopener noreferrer">Learn more</a></li>
+        <li>Designing natural language processing (NLP) applications to improve automated customer service and chatbot interactions. <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank" rel="noopener noreferrer">Learn more</a></li>
+        <li>Integrating AI-driven automation tools to optimize network management and cybersecurity protocols. <a href="https://en.wikipedia.org/wiki/Artificial_intelligence_in_cybersecurity" target="_blank" rel="noopener noreferrer">Learn more</a></li>
+      </ul>
 
-    <h2>Current AI Projects</h2>
-    <ul>
-      <li>Developing advanced machine learning models for predictive analytics to enhance business decision-making processes.</li>
-      <li>Implementing computer vision systems for real-time object detection and quality control in manufacturing.</li>
-      <li>Designing natural language processing (NLP) applications to improve automated customer service and chatbot interactions.</li>
-      <li>Integrating AI-driven automation tools to optimize network management and cybersecurity protocols.</li>
-    </ul>
-
-    <p>His combination of hands-on technical skills, project management experience, leadership in dynamic environments, and strong communication abilities positions him well to tackle challenging roles that demand strategic thinking and technical excellence.</p>
-
+      <p>His combination of hands-on technical skills, project management experience, leadership in dynamic environments, and strong communication abilities positions him well to tackle challenging roles that demand strategic thinking and technical excellence.</p>
+    </main>
     <footer>
       Website: <a href="http://www.chatri.net" target="_blank" rel="noopener noreferrer">www.chatri.net</a> | Contact: <a href="mailto:chatri@chatri.com">chatri@chatri.com</a><br />
       &copy; 2025 Chatri Khatfan
