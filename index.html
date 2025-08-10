@@ -9,37 +9,59 @@
 
   body {
     margin: 0;
-    background: #e6f0fa; /* lighter blue background */
+    background: #e6f0fa;
     font-family: 'Poppins', sans-serif;
-    color: #1a2a6c; /* deep blue text */
+    color: #1a2a6c;
   }
   .card {
     max-width: 700px;
     margin: 50px auto;
-    background: #ffffff;
+    background: #fff;
     border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(26, 42, 108, 0.15); /* soft blue shadow */
+    box-shadow: 0 12px 30px rgba(26, 42, 108, 0.15);
     padding: 40px 50px;
   }
   .name {
     font-size: 2.8rem;
-    color: #274690; /* strong blue */
+    color: #274690;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  /* Colorful gradient line under name */
+  .name::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 6px;
+    margin: 12px auto 0 auto;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #d35400, #f39c12, #d35400);
   }
   .subtitle {
     font-size: 1.4rem;
-    color: #3b5998; /* medium blue */
+    color: #3b5998;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 15px 0 30px 0;
     font-style: italic;
+    position: relative;
+  }
+  /* Colorful gradient line under subtitle */
+  .subtitle::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #8a9dc3, #3b5998, #8a9dc3);
   }
   h3 {
     color: #274690;
     margin-top: 40px;
     margin-bottom: 20px;
-    border-bottom: 3px solid #8a9dc3; /* lighter blue */
+    border-bottom: 3px solid #8a9dc3;
     padding-bottom: 6px;
     font-weight: 700;
   }
@@ -102,7 +124,10 @@
     <p><span class="highlight-name">Chatri</span>’s combination of technical skill, leadership, and communication make him well-suited for roles demanding strategic insight and innovation.</p>
 
     <footer>
-      Website: <a href="http://www.chatri.net" target="_blank" rel="noopener noreferrer">www.chatri.net</a> | Contact: <a href="mailto:chatri@chatri.com">chatri@chatri.com</a><br />
+      Website: 
+      <a href="http://www.chatri.net" target="_blank" rel="noopener noreferrer">www.chatri.net</a> | 
+      <a href="https://thaisa.tripod.com/qut.html" target="_blank" rel="noopener noreferrer">QUT Info</a> | 
+      Contact: <a href="mailto:chatri@chatri.com">chatri@chatri.com</a><br />
       &copy; 2025 <span class="highlight-name">Chatri Khatfan</span>
     </footer>
   </div>
