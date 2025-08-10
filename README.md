@@ -1,2 +1,2 @@
 # chatri.net
-CK's personal website
+⚛ Chatri Khatfan ∙ Quantum & AI Explorer ⚛
