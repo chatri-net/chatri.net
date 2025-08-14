@@ -6,6 +6,7 @@
 <title>⚛ Chatri Khatfan ∙ Quantum & AI Explorer ⚛</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap');
 
   body {
     margin: 0;
@@ -21,6 +22,14 @@
     box-shadow: 0 12px 30px rgba(26, 42, 108, 0.15);
     padding: 40px 50px;
   }
+  .profile-pic {
+    display: block;
+    max-width: 160px;
+    width: 100%;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 8px 20px rgba(26, 42, 108, 0.3);
+  }
   .name {
     font-size: 2.8rem;
     color: #274690;
@@ -29,7 +38,6 @@
     margin-bottom: 8px;
     position: relative;
   }
-  /* Colorful gradient line under name */
   .name::after {
     content: "";
     display: block;
@@ -40,6 +48,13 @@
     border-radius: 3px;
     background: linear-gradient(90deg, #d35400, #f39c12, #d35400);
   }
+  .thai-name {
+    font-size: 1.6rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #3b5998;
+    font-weight: 600;
+    margin-top: 4px;
+  }
   .subtitle {
     font-size: 1.4rem;
     color: #3b5998;
@@ -48,7 +63,6 @@
     font-style: italic;
     position: relative;
   }
-  /* Colorful gradient line under subtitle */
   .subtitle::after {
     content: "";
     display: block;
@@ -92,6 +106,27 @@
     color: #d35400;
     font-weight: 700;
   }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .gallery-item {
+    text-align: center;
+  }
+  .gallery-item img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(26, 42, 108, 0.2);
+  }
+  .gallery-item span {
+    display: block;
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #274690;
+  }
   footer {
     text-align: center;
     color: #274690;
@@ -99,12 +134,17 @@
     font-size: 1rem;
     border-top: 1px solid #d3dff5;
     padding-top: 25px;
+    margin-top: 40px;
   }
 </style>
 </head>
 <body>
   <div class="card">
-    <div class="name"><span class="highlight-name">Chatri Khatfan</span></div>
+    <img src="profile.jpg" alt="Chatri Khatfan" class="profile-pic" />
+    <div class="name">
+      <span class="highlight-name">Chatri Khatfan</span>
+      <div class="thai-name">ชาตรี ขัดฝั้น</div>
+    </div>
     <div class="subtitle">Professional Biography</div>
 
     <p><strong><span class="highlight-name">Chatri Khatfan</span></strong> has extensive leadership and technical management experience, successfully leading companies in Thailand and Japan. He managed Thai Audiotex Limited and TAS Mobile Limited for three years, progressing to top management. After a project manager role at Locus Telecommunications Inc., he returned to Thai Audiotex Limited as <strong>Head of Technical Operations</strong> for both companies for nine years.</p>
@@ -127,12 +167,32 @@
 
     <p><span class="highlight-name">Chatri</span>’s combination of technical skill, leadership, and communication make him well-suited for roles demanding strategic insight and innovation.</p>
 
+    <h3>Related Projects & Themes</h3>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="ai.jpg" alt="AI & Machine Learning">
+        <span>AI & Machine Learning</span>
+      </div>
+      <div class="gallery-item">
+        <img src="quantum.jpg" alt="Quantum Computing">
+        <span>Quantum Computing</span>
+      </div>
+      <div class="gallery-item">
+        <img src="quantum-hybrid.jpg" alt="Hybrid Quantum Models">
+        <span>Hybrid Quantum-Tech</span>
+      </div>
+      <div class="gallery-item">
+        <img src="cyber-ai.jpg" alt="Cybersecurity & AI">
+        <span>Cybersecurity & AI</span>
+      </div>
+    </div>
+
     <footer>
       Website: 
       <a href="http://www.chatri.net" target="_blank" rel="noopener noreferrer">www.chatri.net</a> | 
       <a href="https://thaisa.tripod.com/qut.html" target="_blank" rel="noopener noreferrer">QUT Info</a> | 
       Contact: <a href="mailto:chatri@chatri.com">chatri@chatri.com</a><br />
-      &copy; 2025 <span class="highlight-name">Chatri Khatfan</span>
+      &copy; 2025 <span class="highlight-name">Chatri Khatfan</span> / ชาตรี ขัดฝั้น
     </footer>
   </div>
 </body>
